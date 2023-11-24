@@ -1,0 +1,124 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* make header and body fit the entire page */
+.header {
+  flex: 1;
+}
+
+.body {
+  flex: 3;
+}
+
+/* header */
+.header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+}
+
+/* body */
+.body {
+  padding: 40px;
+}
+
+/* button */
+.body-add-button {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.body-add-button:hover {
+    background-color: #27ae60;
+}
+
+/* books */
+
+.books {
+  margin-top: 20px;
+
+}
+
+#book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.book {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  height: 300px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-text, .book-button {
+  flex: 1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.book-button {
+  width: 200px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+#book-status {
+  background-color: rgb(140, 184, 140);
+}
+
+#book-status:hover {
+  background-color: rgb(81, 159, 81);
+}
+
+#book-status-not-read {
+  background-color: rgb(231, 83, 83);
+}
+
+#book-status-not-read:hover {
+  background-color: rgb(200, 32, 32);
+}
+
+#book-remove {
+  background-color: rgb(203, 191, 191);
+}
+
+#book-remove:hover {
+  background-color: rgb(113, 107, 107);
+}
+
+/* Style for the pop-up form */
+.popup-form {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#title, #author, #pages, #form-button {
+  padding: 10px;
+  margin: 4px;
+}

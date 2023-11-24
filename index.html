@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>
+    </div>
+
+    <div class="body">
+        <div class="body-add-button-box">
+            <button class="body-add-button" onclick="toggleForm()">+ Add Book</button>
+        </div>
+        
+        <div class="books">
+            <div id="book-grid">
+
+
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+    <div id="myForm" class="popup-form">
+        <input type="text" id="title" name="title" required placeholder="Title">
+        <br>
+        <input type="text" id="author" name="author" required placeholder="Author">
+        <br>
+        <input type="number" id="pages" name="pages" required placeholder="Pages">
+        <br>
+        <select id="status" name="status" required>
+            <option value="Read">Read</option>
+            <option value="Not Read">Not Read</option>
+        </select>
+        <br>
+        <button id = "form-button" onclick="addBook()">Submit</button>
+      </div>
+
+</body>
+</html>
